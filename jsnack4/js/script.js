@@ -2,19 +2,28 @@
 // Aggiungi elementi casuali all’array che ha meno elementi,
 // fino a quando ne avrà tanti quanti l’altro.
 
-// Shorter array
-const shorterArray = [2, 34, 89];
+// Short array
+const shortArray = [2, 34, 89];
 
-// Longer array
-const longerArray = [36, 3, 87, 90, 1];
+// Long array
+const longArray = [36, 3, 87, 90, 1];
 
-
-while(shorterArray.length < longerArray.length) {
-    // Aggiungo elementi random a shorterArray
-    shorterArray.push( Math.floor(Math.random() * 100) + 1 );
+// WHILE VERSION
+while(shortArray.length < longArray.length) {
+    // Aggiungo elementi random a shortArray
+    shortArray.push( Math.floor(Math.random() * 100) + 1 );
 }
 
-// Stampo shorterArray con elementi uguali a longerArray
-console.log(shorterArray);
+// Stampo shortArray con elementi uguali a longArray
+console.log(shortArray);
+
+// FOR VERSION
+// for(let i = shortArray.length; i < longArray.length; i++) {
+//     shortArray.push( Math.floor(Math.random() * 100) + 1 );
+// }
+
+// console.log(shortArray);
+
+
 
 
